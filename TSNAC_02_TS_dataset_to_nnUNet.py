@@ -386,7 +386,7 @@ def main():
     parser.add_argument("nnunet_path", type=str, help="Path to store the converted nnUNet dataset")
     parser.add_argument("class_map_name", type=str, choices=list(class_map_5_parts.keys()),
                         help="Which anatomical region to extract")
-    parser.add_argument("--split_file", type=str, default="James36.json",
+    parser.add_argument("--split_file", type=str, default="data_split.json",
                         help="Name of the JSON file containing train/val/test splits")
     parser.add_argument("--skip_confirmation", action="store_true",
                         help="Skip confirmation prompt for label mapping")
